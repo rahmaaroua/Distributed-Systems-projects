@@ -1,0 +1,28 @@
+syntax = "proto3";
+
+package messagerie;
+
+message EnvoyerMessage {
+  string message = 1;
+  string destinataire = 2;
+}
+
+message MessageEnvoye {
+  bool succes = 1;
+  string message_erreur = 2;
+}
+
+message RecupererMessages {
+  string utilisateur_id = 1;
+}
+
+message ListeMessages {
+  repeated Message message = 1;
+}
+
+message Message {
+  string id = 1;
+  string expediteur = 2;
+  string contenu = 3;
+  timestamp date_envoi = 4;
+}
