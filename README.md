@@ -1,18 +1,25 @@
-Description:
+# Distributed Communication in Java
 
-Ce dépôt GitHub contient le code source des serveurs et des clients développés pour Java RMI, gRPC et les sockets. Le code est documenté avec un fichier README qui explique comment déployer et tester l'application.
+This project demonstrates servers and clients using three communication technologies in Java: **Java RMI**, **gRPC**, and **Sockets**. The aim is to understand their differences and applications through specific implementations.
 
-Langages:
+## Features
 
-Java
-Technologies:
+### Java RMI: Task Management
+- Add tasks to a list.
+- Remove tasks from the list.
+- View the full task list.
 
-Java RMI
-gRPC
-Sockets
-Structure du Dépôt:
+### gRPC: Messaging Service
+- Send text messages to a recipient.
+- Retrieve received messages for a user.
 
-java-rmi: Contient le code source des serveurs et des clients Java RMI.
-grpc: Contient le code source des serveurs et des clients gRPC.
-sockets: Contient le code source des serveurs et des clients utilisant des sockets.
-README.md: Ce fichier README.
+### Sockets: Chat Service
+- Send messages to a shared chatroom.
+- View messages from other users in the chatroom.
+
+## How to Run
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/rahmaaroua2002/Distributed-Systems-projects.git
+
+2. Navigate to the project folder and follow the instructions for each technology.
