@@ -1,28 +1,29 @@
 syntax = "proto3";
-
 option java_multiple_files = true;
-option java_package = "com.example.grpc";
-option java_outer_classname = "MessagingProto";
+option java_package = "org.example";
+option java_outer_classname = "JMessengerProto";
+option objc_class_prefix = "HLW";
 
-service Messaging {
-  rpc SendMessage(MessageRequest) returns (MessageResponse);
-  rpc GetMessagesForUser(UserRequest) returns (MessagesResponse);
+service JMessengerService {
+
+  rpc sendMessage ( Message) returns (Confirmation) {}
+  rpc receiveMessage (Inbox) returns ( Message){}
 }
 
-message MessageRequest {
+message Message {
   string sender = 1;
-  string receiver = 2;
-  string message = 3;
+  string text = 2;
+  string receiver = 3;
 }
-
-message UserRequest {
+message User {
   string username = 1;
 }
-
-message MessageResponse {
-  string status = 1;
+message Inbox {
+  string sender = 1;
+  string receiver = 2;
 }
 
-message MessagesResponse {
-  repeated string messages = 1;
+message Confirmation
+{
+  bool success=1;
 }
