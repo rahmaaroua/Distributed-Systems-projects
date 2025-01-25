@@ -64,9 +64,9 @@ public class Client {
     public static void main(String[] args) throws Exception {
         Client client = new Client("localhost", 50051);
         try {
-            client.send("Alex","hi","Jack");
+            client.send("Jasmine","hi","Ahmad");
             System.out.println("waiting for messages");
-            client.receive("Jack","sabrine");
+            client.receive("Ahmad","Lobna");
         } finally {
             client.shutdown();
         }
