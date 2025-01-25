@@ -1,3 +1,5 @@
+package JAVA_RMI;
+
 import TaskManagerInterface;
 
 import java.rmi.registry.LocateRegistry;
