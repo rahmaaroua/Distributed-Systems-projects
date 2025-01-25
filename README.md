@@ -20,6 +20,6 @@ This project demonstrates servers and clients using three communication technolo
 ## How to Run
 1. Clone the repository:
    ```bash
-   git clone https://github.com/rahmaaroua2002/Distributed-Systems-projects.git
+   git clone https://github.com/rahmaaroua/Distributed-Systems-projects.git
 
 2. Navigate to the project folder and follow the instructions for each technology.
